@@ -23,4 +23,4 @@ if [[ ! -z "$JOBNAME" ]]; then
 fi
 
 # run
-exec ${HERITRIX_HOME}/bin/heritrix $_JOBARGS
+# exec ${HERITRIX_HOME}/bin/heritrix $_JOBARGS
