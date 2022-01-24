@@ -42,4 +42,4 @@ ENV FOREGROUND true
 # NOTE: that the webpage is via HTTPS only available!
 EXPOSE 8443
 
-CMD ["/opt/entrypoint.sh"]
+# CMD ["/opt/entrypoint.sh"]
