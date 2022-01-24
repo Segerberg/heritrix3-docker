@@ -12,9 +12,9 @@ RUN mkdir /opt/heritrix
 RUN wget -O /tmp/heritrix.tar.gz http://builds.archive.org/maven2/org/archive/heritrix/heritrix/3.4.0-SNAPSHOT/heritrix-3.4.0-20190205.123555-1-dist.tar.gz
 RUN tar -C /opt -xvf /tmp/heritrix.tar.gz
 
-ADD heritrix-start.sh /usr/local/bin/heritrix-start.sh
+ADD entrypoint.sh /usr/local/bin/entrypoint.sh
 
 EXPOSE 8443
 
-CMD /usr/local/bin/heritrix-start.sh
+CMD /usr/local/bin/entrypoint.sh 
 	
