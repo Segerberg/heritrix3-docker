@@ -1,8 +1,8 @@
 # HERITRIX
 
-FROM java
+ARG java=11-jre
 
-MAINTAINER chris@cbeer.info
+FROM openjdk:${java}
 
 ENV HERITRIX_VERSION 3.2.0
 RUN apt-get update && apt-get install -y wget  unzip
